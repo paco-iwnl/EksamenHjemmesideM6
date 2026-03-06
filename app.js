@@ -20,5 +20,7 @@
 
 // TODO: Trin 7 – Tilføj "slet eget indlæg"
 
+// Test 123
+
 console.log("app.js er klar – lad os bygge!");
 
