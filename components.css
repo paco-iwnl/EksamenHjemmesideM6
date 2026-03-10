@@ -1,0 +1,262 @@
+/* ═══════════════════════════════════════════
+   OnTop Esports – Komponent stylesheet
+   Specialiserede komponenter til specifikke sider
+═══════════════════════════════════════════ */
+
+/* ── SPILLERKORT (holds.html, roster.html) ── */
+.player-card {
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  transition: border-color 0.2s, transform 0.2s;
+  position: relative;
+}
+
+.player-card:hover {
+  border-color: var(--accent);
+  transform: translateY(-4px);
+}
+
+.player-card__img {
+  width: 100%;
+  aspect-ratio: 3/4;
+  background: var(--bg3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-head);
+  font-size: 3rem;
+  color: var(--border);
+}
+
+.player-card__body {
+  padding: 1rem 1.25rem;
+}
+
+.player-card__role {
+  font-family: var(--font-head);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 0.25rem;
+}
+
+.player-card__name {
+  font-family: var(--font-head);
+  font-size: 1.5rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: var(--white);
+}
+
+.player-card__real {
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+/* ── RESULTAT KORT (resultater.html) ── */
+.result-card {
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 1.25rem 1.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.result-card__teams {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-family: var(--font-head);
+  font-weight: 700;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+}
+
+.result-card__score {
+  font-family: var(--font-head);
+  font-size: 1.8rem;
+  font-weight: 900;
+  color: var(--white);
+  letter-spacing: 4px;
+}
+
+.result-card__meta {
+  font-size: 0.8rem;
+  color: var(--muted);
+  text-align: right;
+}
+
+.badge {
+  display: inline-block;
+  font-family: var(--font-head);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  padding: 0.2rem 0.6rem;
+  border-radius: 2px;
+}
+
+.badge--win  { background: rgba(0, 212, 80, 0.15); color: #00d450; border: 1px solid #00d450; }
+.badge--loss { background: rgba(255, 60, 60, 0.15); color: #ff3c3c; border: 1px solid #ff3c3c; }
+.badge--draw { background: rgba(107, 107, 128, 0.2); color: var(--muted); border: 1px solid var(--border); }
+
+/* ── NYHEDS KORT (nyheder.html) ── */
+.news-card {
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  overflow: hidden;
+  transition: border-color 0.2s, transform 0.2s;
+}
+
+.news-card:hover {
+  border-color: var(--accent);
+  transform: translateY(-3px);
+}
+
+.news-card__img {
+  width: 100%;
+  aspect-ratio: 16/9;
+  background: var(--bg3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+  color: var(--border);
+}
+
+.news-card__body {
+  padding: 1.25rem;
+}
+
+.news-card__date {
+  font-family: var(--font-head);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--accent);
+  margin-bottom: 0.5rem;
+}
+
+.news-card__title {
+  font-family: var(--font-head);
+  font-size: 1.2rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: var(--white);
+  margin-bottom: 0.5rem;
+  line-height: 1.2;
+}
+
+.news-card__excerpt {
+  font-size: 0.875rem;
+  color: var(--muted);
+  line-height: 1.5;
+}
+
+/* ── SPONSOR BÅNDET (sponsors.html) ── */
+.sponsor-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+}
+
+.sponsor-item {
+  background: var(--bg2);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-head);
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: var(--muted);
+  text-transform: uppercase;
+  transition: border-color 0.2s;
+}
+
+.sponsor-item:hover {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+/* ── KONTAKT FORMULAR (kontakt.html) ── */
+.form-group {
+  margin-bottom: 1.25rem;
+}
+
+.form-label {
+  display: block;
+  font-family: var(--font-head);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 0.4rem;
+}
+
+.form-input,
+.form-textarea {
+  width: 100%;
+  background: var(--bg3);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 0.75rem 1rem;
+  color: var(--text);
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  transition: border-color 0.2s;
+}
+
+.form-input:focus,
+.form-textarea:focus {
+  outline: none;
+  border-color: var(--accent);
+}
+
+.form-textarea {
+  resize: vertical;
+  min-height: 140px;
+}
+
+/* ── STATS TABEL (om.html / resultater.html) ── */
+.stats-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.9rem;
+}
+
+.stats-table th {
+  font-family: var(--font-head);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--muted);
+  text-align: left;
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid var(--border);
+}
+
+.stats-table td {
+  padding: 0.75rem 1rem;
+  border-bottom: 1px solid rgba(42,42,56,0.5);
+  color: var(--text);
+}
+
+.stats-table tr:hover td {
+  background: var(--bg3);
+}

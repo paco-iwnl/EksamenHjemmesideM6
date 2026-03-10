@@ -1,26 +1,117 @@
 <!DOCTYPE html>
 <html lang="da">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Forum</title>
-  <link rel="stylesheet" href="style.css" />
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=DM+Serif+Display&display=swap" rel="stylesheet"/>
+  <title>OnTop Esports – Forside</title>
+  <link rel="stylesheet" href="css/style.css"/>
+  <link rel="stylesheet" href="css/components.css"/>
 </head>
 <body>
 
   <!-- NAVBAR -->
   <nav class="navbar">
-    <span class="logo">💬 Forum</span>
+    <div class="navbar__inner">
+      <a href="index.html" class="navbar__logo">On<span>Top</span></a>
+      <ul class="navbar__links">
+        <li><a href="index.html" class="active">Hjem</a></li>
+        <li><a href="pages/hold.html">Hold</a></li>
+        <li><a href="pages/resultater.html">Resultater</a></li>
+        <li><a href="pages/nyheder.html">Nyheder</a></li>
+        <li><a href="pages/om.html">Om os</a></li>
+        <li><a href="pages/sponsors.html">Sponsors</a></li>
+        <li><a href="pages/rekruttering.html">Rekruttering</a></li>
+        <li><a href="pages/kontakt.html">Kontakt</a></li>
+      </ul>
+    </div>
   </nav>
 
-  <!-- INDHOLD -->
-  <main class="container">
-    <h2>Velkommen til forummet</h2>
-    <p>Indlæg vises her senere...</p>
-  </main>
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero__content">
+      <div class="hero__tag">Counter-Strike Esports Klub</div>
+      <h1 class="hero__title">
+        Vi spiller
+        <span class="highlight">On Top</span>
+      </h1>
+      <p class="hero__sub">
+        Dansk Counter-Strike på højeste niveau.
+        Vi kæmper for sejren – hver eneste runde.
+      </p>
+      <a href="pages/hold.html" class="btn btn--primary">Mød holdet</a>
+      &nbsp;
+      <a href="pages/resultater.html" class="btn btn--outline">Se resultater</a>
+    </div>
+  </section>
 
-  <!-- TODO: Tilføj Firebase SDK når I er klar -->
-  <script src="app.js"></script>
+  <!-- HURTIGE FACTS -->
+  <section class="section" style="padding-top: 3rem; padding-bottom: 3rem; background: var(--bg2); border-top: 1px solid var(--border); border-bottom: 1px solid var(--border);">
+    <div class="section__inner">
+      <div class="grid-3">
+        <div style="text-align:center;">
+          <div style="font-family:var(--font-head);font-size:3rem;font-weight:900;color:var(--accent);">5</div>
+          <div style="font-family:var(--font-head);font-size:0.8rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--muted);">Aktive spillere</div>
+        </div>
+        <div style="text-align:center;">
+          <div style="font-family:var(--font-head);font-size:3rem;font-weight:900;color:var(--accent);">TODO</div>
+          <div style="font-family:var(--font-head);font-size:0.8rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--muted);">Turneringer spillet</div>
+        </div>
+        <div style="text-align:center;">
+          <div style="font-family:var(--font-head);font-size:3rem;font-weight:900;color:var(--accent);">2025</div>
+          <div style="font-family:var(--font-head);font-size:0.8rem;font-weight:700;letter-spacing:2px;text-transform:uppercase;color:var(--muted);">Grundlagt</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SENESTE NYHEDER PREVIEW -->
+  <section class="section">
+    <div class="section__inner">
+      <p class="section__label">Seneste</p>
+      <h2 class="section__title">Nyheder</h2>
+      <p class="section__desc">Hold dig opdateret med det nyeste fra OnTop.</p>
+
+      <div class="grid-3">
+        <!-- TODO: Tilføj rigtige nyheder her -->
+        <div class="news-card">
+          <div class="news-card__img">📰</div>
+          <div class="news-card__body">
+            <div class="news-card__date">Dato – TODO</div>
+            <div class="news-card__title">Nyhedstitel kommer her</div>
+            <p class="news-card__excerpt">Kort beskrivelse af nyheden skrives her. TODO.</p>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="news-card__img">🎮</div>
+          <div class="news-card__body">
+            <div class="news-card__date">Dato – TODO</div>
+            <div class="news-card__title">Nyhedstitel kommer her</div>
+            <p class="news-card__excerpt">Kort beskrivelse af nyheden skrives her. TODO.</p>
+          </div>
+        </div>
+        <div class="news-card">
+          <div class="news-card__img">🏆</div>
+          <div class="news-card__body">
+            <div class="news-card__date">Dato – TODO</div>
+            <div class="news-card__title">Nyhedstitel kommer her</div>
+            <p class="news-card__excerpt">Kort beskrivelse af nyheden skrives her. TODO.</p>
+          </div>
+        </div>
+      </div>
+
+      <div style="margin-top:2rem;">
+        <a href="pages/nyheder.html" class="btn btn--outline">Alle nyheder</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <span class="footer__logo">OnTop</span>
+      <span class="footer__copy">© 2025 OnTop Esports. Alle rettigheder forbeholdes.</span>
+    </div>
+  </footer>
+
 </body>
 </html>

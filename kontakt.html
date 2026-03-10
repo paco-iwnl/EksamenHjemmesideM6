@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="da">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>OnTop Esports – Kontakt</title>
+  <link rel="stylesheet" href="../css/style.css"/>
+  <link rel="stylesheet" href="../css/components.css"/>
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="navbar__inner">
+      <a href="../index.html" class="navbar__logo">On<span>Top</span></a>
+      <ul class="navbar__links">
+        <li><a href="../index.html">Hjem</a></li>
+        <li><a href="hold.html">Hold</a></li>
+        <li><a href="resultater.html">Resultater</a></li>
+        <li><a href="nyheder.html">Nyheder</a></li>
+        <li><a href="om.html">Om os</a></li>
+        <li><a href="sponsors.html">Sponsors</a></li>
+        <li><a href="rekruttering.html">Rekruttering</a></li>
+        <li><a href="kontakt.html" class="active">Kontakt</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="page-header">
+    <div class="page-header__inner">
+      <p class="page-header__label">Skriv til os</p>
+      <h1 class="page-header__title">Kontakt</h1>
+    </div>
+  </div>
+
+  <section class="section">
+    <div class="section__inner">
+      <div class="grid-2" style="align-items:start; gap:4rem;">
+
+        <!-- Kontaktformular -->
+        <div>
+          <span class="accent-line"></span>
+          <p class="section__label">Send besked</p>
+          <h2 class="section__title">Kontaktformular</h2>
+
+          <!-- TODO: Formularen sender ikke rigtige emails endnu – tilføj backend eller mailto -->
+          <form style="margin-top:1.5rem;">
+            <div class="form-group">
+              <label class="form-label" for="navn">Navn</label>
+              <input class="form-input" type="text" id="navn" placeholder="Dit navn"/>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="email">E-mail</label>
+              <input class="form-input" type="email" id="email" placeholder="din@email.dk"/>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="emne">Emne</label>
+              <input class="form-input" type="text" id="emne" placeholder="Hvad handler din besked om?"/>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="besked">Besked</label>
+              <textarea class="form-textarea" id="besked" placeholder="Skriv din besked her…"></textarea>
+            </div>
+            <button type="submit" class="btn btn--primary">Send besked</button>
+          </form>
+        </div>
+
+        <!-- Kontaktinfo -->
+        <div>
+          <span class="accent-line"></span>
+          <p class="section__label">Find os</p>
+          <h2 class="section__title">Kontaktinfo</h2>
+
+          <div style="display:flex;flex-direction:column;gap:1.5rem;margin-top:1.5rem;">
+            <div class="card">
+              <div class="card__label">E-mail</div>
+              <div class="card__title" style="font-size:1rem;">TODO@ontop.gg</div>
+            </div>
+            <div class="card">
+              <div class="card__label">Discord</div>
+              <div class="card__title" style="font-size:1rem;">discord.gg/TODO</div>
+            </div>
+            <div class="card">
+              <div class="card__label">Sociale medier</div>
+              <div style="display:flex;gap:0.75rem;margin-top:0.5rem;">
+                <!-- TODO: Tilføj rigtige links -->
+                <a href="#" class="btn btn--outline" style="font-size:0.8rem;padding:0.4rem 1rem;">Twitter/X</a>
+                <a href="#" class="btn btn--outline" style="font-size:0.8rem;padding:0.4rem 1rem;">Instagram</a>
+                <a href="#" class="btn btn--outline" style="font-size:0.8rem;padding:0.4rem 1rem;">Twitch</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer__inner">
+      <span class="footer__logo">OnTop</span>
+      <span class="footer__copy">© 2025 OnTop Esports. Alle rettigheder forbeholdes.</span>
+    </div>
+  </footer>
+
+</body>
+</html>
